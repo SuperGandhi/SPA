@@ -196,6 +196,41 @@ section{
     line-height: 1.5;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 1.5rem;
+    background: #eee;
+}
+
+.container .posts-cotainer .post{
+    width: 100%;
+    padding: 2rem;
+    background-color: #fff;
+    border: var(--border);
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .posts-cotainer .post .image{
+    height: 40rem;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.container .posts-cotainer .post .date{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color: var(--blue);
+}
+
+.container .posts-cotainer .post .title{
+    padding-top: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
 
 
 @media (max-width:991px){
@@ -267,6 +302,4 @@ section{
         font-size: 50%;
     }
 
-
-    
 }
